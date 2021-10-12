@@ -5,7 +5,7 @@ const classNames = require("classnames");
 const List = ({ list = [] }) => (
   <ul className="mr-20 matches styled" data-testid="match-list">
     {list.map((match) => (
-      <li className="slide-up-fade-in">
+      <li key={match.name} className="slide-up-fade-in">
         {`Match ${match.name} won by ${match.winner}`}
       </li>
     ))}
@@ -71,7 +71,7 @@ export default class FootballMatchesData extends Component {
               <div
                 className="total-matches"
                 data-testid="total-matches"
-              >{`Total Matches: ${footballMatches.data.length}`}</div>
+              >{`Total matches: ${footballMatches.data.length}`}</div>
               <List list={footballMatches.data} />
             </section>
           )}

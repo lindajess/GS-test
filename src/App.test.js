@@ -40,7 +40,7 @@ test('search is made on by clicking on search button and result found - test 1',
 	let { getByTestId, queryByTestId } = renderApp();
 
   const url = 'https://jsonmock.hackerrank.com/api/football_competitions?year=2011';
-  fetchMock.getOnce(url, JSON.stringify({ page:1,per_page:10,total:0,total_pages:0,data:[{"name":"UEFA Champions League","country":"","year":2011,"winner":"Chelsea","runnerup":"Bayern Munich"},{"name":"Serie A","country":"Italy","year":2011,"winner":"Juventus","runnerup":"AC Milan"},{"name":"Bundesliga","country":"Germany","year":2011,"winner":"Borussia Dortmund","runnerup":"Bayern Munchen"}]}));
+  fetchMock.getOnce(url, JSON.stringify({ page:1,per_page:10,total:3,total_pages:0,data:[{"name":"UEFA Champions League","country":"","year":2011,"winner":"Chelsea","runnerup":"Bayern Munich"},{"name":"Serie A","country":"Italy","year":2011,"winner":"Juventus","runnerup":"AC Milan"},{"name":"Bundesliga","country":"Germany","year":2011,"winner":"Borussia Dortmund","runnerup":"Bayern Munchen"}]}));
   
   fireEvent.click(getByTestId('year-list').childNodes[0]);
 
@@ -59,7 +59,7 @@ test('search is made on by clicking on search button and result found - test 2',
 	let { getByTestId, queryByTestId } = renderApp();
 
   const url = 'https://jsonmock.hackerrank.com/api/football_competitions?year=2013';
-  fetchMock.getOnce(url, JSON.stringify({ page:1,per_page:10,total:0,total_pages:0,data:[{"name":"English Premier League","country":"England","year":2013,"winner":"Manchester City","runnerup":"Liverpool"},{"name":"La Liga","country":"Spain","year":2013,"winner":"Atletico Madrid","runnerup":"FC Barcelona"}]}));
+  fetchMock.getOnce(url, JSON.stringify({ page:1,per_page:10,total:2,total_pages:0,data:[{"name":"English Premier League","country":"England","year":2013,"winner":"Manchester City","runnerup":"Liverpool"},{"name":"La Liga","country":"Spain","year":2013,"winner":"Atletico Madrid","runnerup":"FC Barcelona"}]}));
   
   fireEvent.click(getByTestId('year-list').childNodes[2]);
 
