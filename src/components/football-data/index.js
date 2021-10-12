@@ -29,10 +29,6 @@ export default class FootballMatchesData extends Component {
 
   onClick = (year) => async (e) => {
     // Code written in next line is to take care of adding active class to selected year for css purpose.
-    this.setState({
-      selectedYear: year,
-    });
-
     const response = await fetch(
       "https://jsonmock.hackerrank.com/api/football_competitions?year=" + year
     );
@@ -40,6 +36,7 @@ export default class FootballMatchesData extends Component {
 
     this.setState({
       data: data,
+      selectedYear: year,
     });
   };
 
@@ -75,7 +72,6 @@ export default class FootballMatchesData extends Component {
                 className="total-matches"
                 data-testid="total-matches"
               >{`Total Matches : ${footballMatches.total}`}</div>
-
               <List list={footballMatches.data} />
             </section>
           )}
