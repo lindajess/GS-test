@@ -1,0 +1,30 @@
+<testsuites name="jest tests" tests="4" failures="2" time="10.928">
+  <testsuite name="undefined" errors="0" failures="2" skipped="0" timestamp="2021-10-12T16:20:37" time="10.928" tests="4">
+    <testcase classname=" initial UI is rendered as expected" name=" initial UI is rendered as expected" time="0.025">
+    </testcase>
+    <testcase classname=" search is made on by clicking on search button and no results found" name=" search is made on by clicking on search button and no results found" time="0.021">
+    </testcase>
+    <testcase classname=" search is made on by clicking on search button and result found - test 1" name=" search is made on by clicking on search button and result found - test 1" time="4.779">
+      <failure>Error: expect(received).toHaveTextContent()
+
+received value must be an HTMLElement or an SVGElement.
+Received has value: null
+    at /Users/lgutierrezm/Desktop/testGeniusSport/4a739fce-3a89-471a-adea-b44fd941316f/src/App.test.js:48:44
+    at runExpectation (/Users/lgutierrezm/Desktop/testGeniusSport/4a739fce-3a89-471a-adea-b44fd941316f/node_modules/wait-for-expect/lib/index.js:49:25)
+    at Timeout.callback [as _onTimeout] (/Users/lgutierrezm/Desktop/testGeniusSport/4a739fce-3a89-471a-adea-b44fd941316f/node_modules/jsdom/lib/jsdom/browser/Window.js:523:19)
+    at listOnTimeout (internal/timers.js:554:17)
+    at processTimers (internal/timers.js:497:7)</failure>
+    </testcase>
+    <testcase classname=" search is made on by clicking on search button and result found - test 2" name=" search is made on by clicking on search button and result found - test 2" time="4.772">
+      <failure>Error: expect(received).toHaveTextContent()
+
+received value must be an HTMLElement or an SVGElement.
+Received has value: null
+    at /Users/lgutierrezm/Desktop/testGeniusSport/4a739fce-3a89-471a-adea-b44fd941316f/src/App.test.js:67:44
+    at runExpectation (/Users/lgutierrezm/Desktop/testGeniusSport/4a739fce-3a89-471a-adea-b44fd941316f/node_modules/wait-for-expect/lib/index.js:49:25)
+    at Timeout.callback [as _onTimeout] (/Users/lgutierrezm/Desktop/testGeniusSport/4a739fce-3a89-471a-adea-b44fd941316f/node_modules/jsdom/lib/jsdom/browser/Window.js:523:19)
+    at listOnTimeout (internal/timers.js:554:17)
+    at processTimers (internal/timers.js:497:7)</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
