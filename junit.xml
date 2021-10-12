@@ -1,61 +1,25 @@
-<testsuites name="jest tests" tests="4" failures="4" time="15.669">
-  <testsuite name="undefined" errors="0" failures="4" skipped="0" timestamp="2021-10-12T16:26:54" time="15.669" tests="4">
-    <testcase classname=" initial UI is rendered as expected" name=" initial UI is rendered as expected" time="0.027">
-      <failure>Error: expect(received).toBe(expected)
-
-Expected value to be (using ===):
-  null
-Received:
-  &lt;div class=&quot;total-matches&quot; data-testid=&quot;total-matches&quot;&gt;Total Matches : undefined&lt;/div&gt;
-
-Difference:
-
-  Comparing two different types of values. Expected null but received object.
-    at Object.&lt;anonymous&gt; (/Users/lgutierrezm/Desktop/testGeniusSport/4a739fce-3a89-471a-adea-b44fd941316f/src/App.test.js:18:42)
-    at Object.asyncFn (/Users/lgutierrezm/Desktop/testGeniusSport/4a739fce-3a89-471a-adea-b44fd941316f/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at /Users/lgutierrezm/Desktop/testGeniusSport/4a739fce-3a89-471a-adea-b44fd941316f/node_modules/jest-jasmine2/build/queueRunner.js:38:12
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/lgutierrezm/Desktop/testGeniusSport/4a739fce-3a89-471a-adea-b44fd941316f/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at /Users/lgutierrezm/Desktop/testGeniusSport/4a739fce-3a89-471a-adea-b44fd941316f/node_modules/p-map/index.js:46:16
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)</failure>
+<testsuites name="jest tests" tests="4" failures="2" time="10.839">
+  <testsuite name="undefined" errors="0" failures="2" skipped="0" timestamp="2021-10-12T16:32:26" time="10.839" tests="4">
+    <testcase classname=" initial UI is rendered as expected" name=" initial UI is rendered as expected" time="0.026">
     </testcase>
-    <testcase classname=" search is made on by clicking on search button and no results found" name=" search is made on by clicking on search button and no results found" time="4.798">
-      <failure>Error: expect(received).toBe(expected)
-
-Expected value to be (using ===):
-  null
-Received:
-  &lt;div class=&quot;total-matches&quot; data-testid=&quot;total-matches&quot;&gt;Total Matches : 0&lt;/div&gt;
-
-Difference:
-
-  Comparing two different types of values. Expected null but received object.
-    at /Users/lgutierrezm/Desktop/testGeniusSport/4a739fce-3a89-471a-adea-b44fd941316f/src/App.test.js:32:44
-    at runExpectation (/Users/lgutierrezm/Desktop/testGeniusSport/4a739fce-3a89-471a-adea-b44fd941316f/node_modules/wait-for-expect/lib/index.js:49:25)
-    at Timeout.callback [as _onTimeout] (/Users/lgutierrezm/Desktop/testGeniusSport/4a739fce-3a89-471a-adea-b44fd941316f/node_modules/jsdom/lib/jsdom/browser/Window.js:523:19)
-    at listOnTimeout (internal/timers.js:554:17)
-    at processTimers (internal/timers.js:497:7)</failure>
+    <testcase classname=" search is made on by clicking on search button and no results found" name=" search is made on by clicking on search button and no results found" time="0.02">
     </testcase>
-    <testcase classname=" search is made on by clicking on search button and result found - test 1" name=" search is made on by clicking on search button and result found - test 1" time="4.745">
-      <failure>Error: expect(element).toHaveTextContent()
+    <testcase classname=" search is made on by clicking on search button and result found - test 1" name=" search is made on by clicking on search button and result found - test 1" time="4.734">
+      <failure>Error: expect(received).toHaveTextContent()
 
-Expected element to have text content:
-  Total matches: 3
-Received:
-  Total Matches : 0
+received value must be an HTMLElement or an SVGElement.
+Received has value: null
     at /Users/lgutierrezm/Desktop/testGeniusSport/4a739fce-3a89-471a-adea-b44fd941316f/src/App.test.js:48:44
     at runExpectation (/Users/lgutierrezm/Desktop/testGeniusSport/4a739fce-3a89-471a-adea-b44fd941316f/node_modules/wait-for-expect/lib/index.js:49:25)
     at Timeout.callback [as _onTimeout] (/Users/lgutierrezm/Desktop/testGeniusSport/4a739fce-3a89-471a-adea-b44fd941316f/node_modules/jsdom/lib/jsdom/browser/Window.js:523:19)
     at listOnTimeout (internal/timers.js:554:17)
     at processTimers (internal/timers.js:497:7)</failure>
     </testcase>
-    <testcase classname=" search is made on by clicking on search button and result found - test 2" name=" search is made on by clicking on search button and result found - test 2" time="4.747">
-      <failure>Error: expect(element).toHaveTextContent()
+    <testcase classname=" search is made on by clicking on search button and result found - test 2" name=" search is made on by clicking on search button and result found - test 2" time="4.751">
+      <failure>Error: expect(received).toHaveTextContent()
 
-Expected element to have text content:
-  Total matches: 2
-Received:
-  Total Matches : 0
+received value must be an HTMLElement or an SVGElement.
+Received has value: null
     at /Users/lgutierrezm/Desktop/testGeniusSport/4a739fce-3a89-471a-adea-b44fd941316f/src/App.test.js:67:44
     at runExpectation (/Users/lgutierrezm/Desktop/testGeniusSport/4a739fce-3a89-471a-adea-b44fd941316f/node_modules/wait-for-expect/lib/index.js:49:25)
     at Timeout.callback [as _onTimeout] (/Users/lgutierrezm/Desktop/testGeniusSport/4a739fce-3a89-471a-adea-b44fd941316f/node_modules/jsdom/lib/jsdom/browser/Window.js:523:19)

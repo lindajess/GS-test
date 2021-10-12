@@ -43,7 +43,7 @@ export default class FootballMatchesData extends Component {
   render() {
     var years = [2011, 2012, 2013, 2014, 2015, 2016, 2017];
     const footballMatches = this.state.data;
-    const showList = this.state.selectedYear && footballMatches.total;
+    const showList = this.state.selectedYear && !!footballMatches.total;
     const showNoResults = this.state.selectedYear && !footballMatches.total;
     return (
       <div className="layout-row">
@@ -71,7 +71,7 @@ export default class FootballMatchesData extends Component {
               <div
                 className="total-matches"
                 data-testid="total-matches"
-              >{`Total Matches : ${footballMatches.total}`}</div>
+              >{`Total Matches: ${footballMatches.data.length}`}</div>
               <List list={footballMatches.data} />
             </section>
           )}
